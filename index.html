@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Working With DOM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <header id="main-header" class="bg-success text-white mb-3" style="min-height:70px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-2">
+                    <h1 id="header-title">Shopping List</h1>
+                </div>
+                <div class="col-md-6 align-self-center pt-2">
+                    <input type="text" placeholder="Search items..." class="form-control" id="filter">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h3 class="title">Add a list</h3>
+            <form class="form-inline mb-3" id="addForm">
+                <input type="text" class="form-control mr-2" id="shoppingItem">
+                <select class="form-control mr-2" id="category">
+					<option value="House Appliance">House Appliance</option>
+					<option value="Food">Food</option>
+					<option value="Drinks">Drinks</option>
+					<option value="Clothing">Clothing</option>
+				</select>
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <div class="row">
+                <table id="items" class="table table-striped tbody tr:nth-of-type(odd)">
+                    <thead>
+                        <td>
+                            <h5 class="title">Item</h5>
+                        </td>
+                        <td>
+                            <h5 class="title">Category</h5>
+                        </td>
+                    </thead>
+
+                    <tr>
+                        <td>
+                            <li class="list-group-item">Microwave</li>
+                        </td>
+                        <td>
+                            <li class="list-group-item">House Appliance</li>
+                        </td>
+                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li class="list-group-item">Drinking Water</li>
+                        </td>
+                        <td>
+                            <li class="list-group-item">Drinks</li>
+                        </td>
+                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li class="list-group-item">Baking Flour</li>
+                        </td>
+                        <td>
+                            <li class="list-group-item">Food</li>
+                        </td>
+                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li class="list-group-item">Tropicana Juice</li>
+                        </td>
+                        <td>
+                            <li class="list-group-item">Drinks</li>
+                        </td>
+                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <li class="list-group-item">Bread</li>
+                        </td>
+                        <td>
+                            <li class="list-group-item">Food</li>
+                        </td>
+                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
+                    </tr>
+
+                </table>
+            </div>
+            <hr>
+            <br>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
