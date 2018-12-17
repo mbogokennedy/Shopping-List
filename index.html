@@ -26,71 +26,35 @@
         <div id="main" class="card card-body">
             <h3 class="title">Add a list</h3>
             <form class="form-inline mb-3" id="addForm">
-                <input type="text" class="form-control mr-2" id="shoppingItem">
-                <select class="form-control mr-2" id="category">
+                <input type="text" class="form-control mr-2 mt-2" id="shoppingItem">
+                <select class="form-control mr-2 mt-2" id="category">
+					<option value="default">---</option>
 					<option value="House Appliance">House Appliance</option>
 					<option value="Food">Food</option>
 					<option value="Drinks">Drinks</option>
 					<option value="Clothing">Clothing</option>
-				</select>
-                <input type="submit" class="btn btn-dark" value="Submit">
+                </select>
+                <input type="text" class="form-control mr-2 mt-2" id="amount">
+                <input type="submit" id="submitBtn" class="btn btn-dark mt-2" value="Submit">
             </form>
             <div class="row">
+                <table class="table">
+                    <div>
+                        <thead>
+                            <td>
+                                <h5 class="title">Item</h5>
+                            </td>
+                            <td>
+                                <h5 class="title">Category</h5>
+                            </td>
+                            <td>
+                                <h5 class="title">Quantity</h5>
+                            </td>
+                        </thead>
+                    </div>
+                </table>
                 <table id="items" class="table table-striped tbody tr:nth-of-type(odd)">
-                    <thead>
-                        <td>
-                            <h5 class="title">Item</h5>
-                        </td>
-                        <td>
-                            <h5 class="title">Category</h5>
-                        </td>
-                    </thead>
 
-                    <tr>
-                        <td>
-                            <li class="list-group-item">Microwave</li>
-                        </td>
-                        <td>
-                            <li class="list-group-item">House Appliance</li>
-                        </td>
-                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li class="list-group-item">Drinking Water</li>
-                        </td>
-                        <td>
-                            <li class="list-group-item">Drinks</li>
-                        </td>
-                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li class="list-group-item">Baking Flour</li>
-                        </td>
-                        <td>
-                            <li class="list-group-item">Food</li>
-                        </td>
-                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li class="list-group-item">Tropicana Juice</li>
-                        </td>
-                        <td>
-                            <li class="list-group-item">Drinks</li>
-                        </td>
-                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <li class="list-group-item">Bread</li>
-                        </td>
-                        <td>
-                            <li class="list-group-item">Food</li>
-                        </td>
-                        <td><button class="mt-2 btn btn-sm btn-danger float-right danger">X</button></td>
-                    </tr>
 
                 </table>
             </div>
